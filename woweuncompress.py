@@ -4,12 +4,11 @@
 import sys
 import os
 from glob import glob
-from optparse import OptionParser
 from commands import getstatusoutput
 
 
 COMPRESSION_MAP = {
-    "rar" : "unrar x -y %s",
+    "rar": "unrar x -y '%s'",
 }
 
 
